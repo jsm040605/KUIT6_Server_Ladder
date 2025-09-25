@@ -1,6 +1,6 @@
-import ladder.Direction;
-import ladder.Node;
-import ladder.Position;
+import ladder.enums.Direction;
+import ladder.model.Node;
+import ladder.model.Position;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

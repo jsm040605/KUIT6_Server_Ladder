@@ -1,26 +1,11 @@
 package ladder.creator;
 
-import ladder.GreaterThanOne;
-import ladder.Position;
-import ladder.Row;
+import ladder.model.Position;
+import ladder.model.Row;
 
-public class LadderCreator {
+public interface LadderCreator {
 
-    private final Row[] rows;
+    void drawLine(Position row, Position col);
 
-    public LadderCreator(GreaterThanOne numberOfRows, GreaterThanOne numberOfPerson) {
-        rows = new Row[numberOfRows.getNumber()];
-        for (int i = 0; i < numberOfRows.getNumber(); i++) {
-            rows[i] = new Row(numberOfPerson);
-        }
-    }
-
-    //todo 랜덤 사다리 생성 로직 만들기
-
-    public Row[] getRows() {
-        return rows;
-    }
-
-    public void drawLine(Position row, Position col) { rows[row.getValue()].drawLine(col); }
-
+    Row[] getRows();
 }

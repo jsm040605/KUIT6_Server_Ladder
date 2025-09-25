@@ -1,5 +1,9 @@
 package ladder;
 
+import ladder.model.Node;
+import ladder.model.Position;
+import ladder.model.Row;
+
 public class LadderPrinter {
 
     Row[] rows;

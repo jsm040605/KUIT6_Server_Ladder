@@ -1,4 +1,6 @@
-package ladder;
+package ladder.model;
+
+import ladder.enums.Direction;
 
 public class Node {
     private Direction direction;

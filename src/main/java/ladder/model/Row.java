@@ -1,4 +1,7 @@
-package ladder;
+package ladder.model;
+
+import ladder.enums.Direction;
+import ladder.enums.ErrorMessage;
 
 public class Row {
     private final Node[] nodes;
@@ -9,6 +12,8 @@ public class Row {
             nodes[i] = Node.from(Direction.NONE);
         }
     }
+
+
 
     public Node[] getNodes() {
         return nodes.clone();

@@ -1,4 +1,6 @@
-package ladder;
+package ladder.model;
+
+import ladder.enums.ErrorMessage;
 
 public class GreaterThanOne {
 
